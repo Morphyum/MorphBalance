@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="ChampionshipPriceFunds.cs" />
     <Compile Include="ExpectedPosition.cs" />
+    <Compile Include="Logger.cs" />
     <Compile Include="MorphBalance.cs" />
     <Compile Include="SponsorAdjustments.cs" />
     <Compile Include="TeamOffers.cs" />

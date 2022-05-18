@@ -9,7 +9,7 @@ namespace MorphBalance
 {
     class Version
     {
-        static string version = " +MB-0.1";
+        static string version = " +MB-1.0";
         [HarmonyPatch(typeof(SetUITextToVersionNumber), "Awake")]
         public static class SetUITextToVersionNumber_Awake_Patch
         {
