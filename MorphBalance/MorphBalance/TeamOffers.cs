@@ -1,5 +1,6 @@
 ﻿using Harmony;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace MorphBalance
@@ -31,6 +32,7 @@ namespace MorphBalance
                 List<Team> mTeams = new List<Team>();
                 __instance.grid.DestroyListItems();
                 List<Championship> entityList = Game.instance.championshipManager.GetEntityList();
+                entityList = new List<Championship>(entityList.OrderBy(champ => champ.championshipOrderRelative).ThenBy(champ => champ.championshipOrder));
                 GameUtility.SetActive(__instance.jobEntry, true);
                 GameUtility.SetActive(__instance.noJobsEntry, true);
                 GameUtility.SetActive(__instance.championshipEntry, true);
